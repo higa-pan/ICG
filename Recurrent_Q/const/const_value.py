@@ -1,0 +1,39 @@
+# NUM_OF_GROUPS は全体のグループ数を表す
+NUM_OF_GROUPS = 3
+# NUM_OF_AGENTS は全体のエージェント数を表す
+NUM_OF_AGENTS = NUM_OF_GROUPS
+# NUM_OF_JOINED_GROUPS はエージェントの所属するグループ数を表す
+NUM_OF_JOINED_GROUPS = 2
+# NUM_OF_MEMBER_IN_GROUPS はグループ内に所属する人数を表す
+NUM_OF_MEMBER_IN_GROUPS = 2
+# NUM_OF_ACTIONS はエージェントが行える行動の数を表す
+NUM_OF_ACTIONS = 6
+# SIMULATION_TIMES は一回のゲームあたりのステップ数
+SIMULATION_TIMES = 10000
+# LEARNING_SPAN はデータの保存や学習のタイミングを表す
+LEARNING_SPAN = 10000
+# SIMULATION_LOOP_TIMES は何シード行うかを表す数
+SIMULATION_LOOP_TIMES = 1
+
+# TEMPERATURE はソフトマックス方式の温度パラメータを表す
+TEMPERATURE = 1.0
+# MAX_ERROR はバッチ学習のエラー値の上限を表す
+MAX_ERROR = 0.01
+# MAX_BATCH_TIMES は1回バッチ学習内で学習を繰り返す回数を表す
+MAX_BATCH_TIMES = 25000
+# MAX_REWARD_ABS は報酬の絶対値の最大値を表す(活性化関数の値域に合わせるための正規化に必要)
+MAX_REWARD_ABS = 1.0
+# LEARN_STEP はエージェントが学習するステップを表す(LEARN_STEP周期の行動系列を獲得させる)
+LEARN_STEP = 25
+NUM_INPUT_UNIT = NUM_OF_JOINED_GROUPS * 2
+
+NUM_OUTPUT_UNIT = NUM_OF_ACTIONS
+
+NUM_HIDDEN_UNIT = 10
+
+
+# LEARNING_RATE_ETA はrnnの学習率を表す
+LEARNING_RATE_ETA = 0.1
+
+# DISCOUNT_RATE_G はQ学習の割引率を表す
+DISCOUNT_RATE_G = 0.1
