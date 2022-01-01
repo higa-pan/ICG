@@ -13,9 +13,6 @@ class Agent:
         self.get_reward = 0.0
         # ゲームで得た報酬の合計が入る
         self.payoff = 0.0
-        # エージェント0は[協力した、してない],
-        # エージェント1は[協力した、してない],
-        # [自分が取るべき行動] という順序で参照するように作ってる
 
     def choose_first_cooperate_group(self, rand0_or_1):
         self.cooperation_group = list(self.group_member_map.keys())[rand0_or_1]
